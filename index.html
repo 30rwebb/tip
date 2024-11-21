@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on users device-->
+  <title>Tip calculator</title>
+  <link name="StyleSheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+  <header>
+    <img src="./images/icon-calculator-solid.svg" alt="">
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="topSection">
+        <div class="label">
+          <label for="input">Bill</label>
+        </div>
+
+        <div class="input_wrapper">
+          <input type="number" placeholder="0.0" id="input">
+          <img src="./images/icon-dollar-sign-solid.svg">
+        </div>
+
+        <div class="label">
+          <label for="CustomTip">Select Tip %</label>
+        </div>
+
+        <div class="btncontainer">
+         <button class="btn">5%</button>
+         <button class="btn">10%</button>
+         <button class="btn active">15%</button>
+         <button class="btn">25%</button>
+         <button class="btn">50%</button>
+         <input type="number" placeholder="Custom" id="CustomTip">
+        </div>
+
+        <div class="label">
+          <label for="People">Number of People</label>
+          <p id="error"></p>
+        </div>
+
+        <div class="peopleWrapper">
+          <input type="number" placeholder="1" id="people">
+          <img src="./images/icon-person-solid.svg" alt="">
+        </div>
+      </div>
+
+
+      <div class="buttonSection">
+        <div class="amount">
+          <div class="desc">
+            <p>Tip Amount <br> <span>/ Person</span></p>
+            <div class="TipValue">$5</div>
+          </div>
+          <div class="desc">
+            <p>Tiotal <br> <span>/ Person</span></p>
+            <div class="TipValue">$200</div>
+          </div>
+        </div>
+        <button class="reset">Reset</button>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
